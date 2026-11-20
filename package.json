@@ -2,7 +2,7 @@
   "name": "ai-cost-dashboard",
   "displayName": "AI Cost Dashboard — OpenRouter & Claude Spend Tracker",
   "description": "Real-time cost tracker for OpenRouter and Anthropic. See today/month spend by project, 14-day trend, budget alerts — stop bill shock.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "Jamestwu",
   "repository": {
     "type": "git",
