@@ -3,17 +3,17 @@
 Real-time cost tracker for **OpenRouter** and **Anthropic / Claude Code**, right inside VS Code.
 Stop guessing how much you're spending — see today's spend, 14-day trend, and per-project breakdown at a glance.
 
-![AI Cost Dashboard inside VS Code](https://aka.doubaocdn.com/s/8c7uzXVzHe)
+![AI Cost Dashboard inside VS Code](https://innonation.oss-cn-beijing.aliyuncs.com/vscode-extension/ai-cost-dashboard/01-overview.png)
 
 ## What you get
 
 **Spent today, at a glance** — one big number you can't ignore, refreshed every 5 minutes. Today, account balance, 14-day bars, and which project burned the money.
 
-![Panel close-up](https://aka.doubaocdn.com/s/FM7hLHGpf0)
+![Panel close-up](https://innonation.oss-cn-beijing.aliyuncs.com/vscode-extension/ai-cost-dashboard/02-panel-closeup.png)
 
 **Budget alerts that actually fire** — yellow at 80%, red at 100%. Set a budget once and forget about it.
 
-![Budget alert in VS Code](https://aka.doubaocdn.com/s/nkYgKrrTvG)
+![Budget alert in VS Code](https://innonation.oss-cn-beijing.aliyuncs.com/vscode-extension/ai-cost-dashboard/03-budget-alert.png)
 
 ## Features
 
