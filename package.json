@@ -1,0 +1,89 @@
+{
+  "name": "ai-cost-dashboard",
+  "displayName": "AI Cost Dashboard — OpenRouter & Claude Spend Tracker",
+  "description": "Real-time cost tracker for OpenRouter and Anthropic. See today/month spend by project, 14-day trend, budget alerts — stop bill shock.",
+  "version": "0.1.0",
+  "publisher": "Jamestwu",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "icon": "media/icon.png",
+  "galleryBanner": {
+    "color": "#1e3a5f",
+    "theme": "dark"
+  },
+  "categories": [
+    "Visualization",
+    "Other"
+  ],
+  "keywords": [
+    "openrouter",
+    "claude",
+    "anthropic",
+    "cost",
+    "billing",
+    "spend",
+    "budget",
+    "ai",
+    "copilot",
+    "tokens"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "ai-cost-dashboard",
+          "title": "AI Cost",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "ai-cost-dashboard": [
+        {
+          "id": "aiCostView",
+          "name": "Cost Dashboard",
+          "type": "webview"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "aiCost.setApiKey",
+        "title": "AI Cost: Set OpenRouter API Key"
+      },
+      {
+        "command": "aiCost.refresh",
+        "title": "AI Cost: Refresh Now"
+      },
+      {
+        "command": "aiCost.setBudget",
+        "title": "AI Cost: Set Monthly Budget"
+      }
+    ],
+    "configuration": {
+      "title": "AI Cost Dashboard",
+      "properties": {
+        "aiCost.refreshIntervalSeconds": {
+          "type": "number",
+          "default": 300,
+          "description": "Auto refresh interval in seconds (min 60)."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3"
+  }
+}
